@@ -24,7 +24,7 @@ class serial_write(gr.sync_block):
             out_sig=None,
         )
         port_list = list(serial.tools.list_ports.comports())
-        self.serial_port = serial.Serial(str[port_list[serial_port][0], 9600])
+        self.serial_port = serial.Serial(str(port_list[serial_port][0]), 9600)
 
     def tx_serial(self, str):
         input_str = input(str).encode("utf-8")
