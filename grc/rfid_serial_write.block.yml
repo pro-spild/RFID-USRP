@@ -1,0 +1,21 @@
+id: rfid_serial_write
+label: serial_write
+category: '[Rfid]'
+templates:
+  imports: from gnuradio import rfid
+  make: rfid.serial_write(${serial_port})
+parameters:
+- id: serial_port
+  label: Serial_port
+  dtype: int
+inputs:
+- label: in
+  domain: stream
+  dtype: float
+- label: in
+  domain: stream
+  dtype: float
+- label: in
+  domain: stream
+  dtype: float
+file_format: 1

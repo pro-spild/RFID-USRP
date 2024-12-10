@@ -5,9 +5,10 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
-
 install(FILES
     rfid_global_var.block.yml
     rfid_gate.block.yml
     rfid_tag_decoder.block.yml
-    rfid_reader.block.yml DESTINATION share/gnuradio/grc/blocks)
+    rfid_reader.block.yml
+    rfid_serial_write.block.yml
+    DESTINATION share/gnuradio/grc/blocks)

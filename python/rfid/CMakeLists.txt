@@ -19,7 +19,9 @@ add_subdirectory(bindings)
 ########################################################################
 # Install python sources
 ########################################################################
-gr_python_install(FILES __init__.py DESTINATION ${GR_PYTHON_DIR}/gnuradio/rfid)
+gr_python_install(FILES __init__.py
+    serial_write.py
+    DESTINATION ${GR_PYTHON_DIR}/gnuradio/rfid)
 
 ########################################################################
 # Handle the unit tests
